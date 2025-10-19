@@ -1,0 +1,5 @@
+asyncapi: 2.6.0
+info: { title: EcomFest Events, version: 0.1.0 }
+channels:
+  campaign.updated: { description: 活动被更新时触发 }
+  asset.uploaded: { description: 新素材上传 }

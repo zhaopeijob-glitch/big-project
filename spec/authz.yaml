@@ -1,0 +1,9 @@
+# RBAC/ABAC 权限矩阵（简化）
+roles:
+  admin:
+    can: [manage_users, manage_campaigns, manage_tasks, manage_assets, release]
+  manager:
+    can: [manage_campaigns, manage_tasks, manage_assets]
+  member:
+    can: [read_campaigns, update_assigned_tasks, upload_assets]
+policies: []

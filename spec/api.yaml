@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: EcomFest API
+  version: 0.1.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: ok
+  /campaigns:
+    get:
+      summary: 列出活动
+      parameters:
+        - in: query
+          name: market
+          schema: { type: string }
+      responses:
+        '200': { description: ok }
+  /assets/upload-url:
+    post:
+      summary: 获取预签名上传URL
+      responses:
+        '200': { description: ok }
+components: {}

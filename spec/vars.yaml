@@ -1,0 +1,9 @@
+env:
+  APP_ENV: { default: "dev", scope: "all", owner: "ops" }
+  DB_URL:  { required: true, scope: "backend", secret: true }
+  STORAGE_ENDPOINT: { default: "http://localhost:9000", scope: "backend" }
+  STORAGE_BUCKET: { default: "ecomfest", scope: "backend" }
+feature_flags:
+  gantt_advanced: { default: false, owner: "pm", desc: "高级甘特功能" }
+thresholds:
+  preheat_days_default: { default: 5, min: 0, max: 30, owner: "ops" }

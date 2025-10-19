@@ -1,0 +1,6 @@
+# 聚合规格（SSoT）
+api: ./api.yaml
+db: ./db/schema.sql
+authz: ./authz.yaml
+events: ./events.yaml
+vars: ./vars.yaml
